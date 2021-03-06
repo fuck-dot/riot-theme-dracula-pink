@@ -35,7 +35,9 @@ select,
 .mx_RightPanel_ResizeHandle:hover,
 .mx_RoomTile_nameContainer:hover,
 .mx_AccessibleButton.mx_RoomTile:hover,
-.mx_AccessibleButton.mx_BaseCard_Button.mx_RoomSummaryCard_Button.mx_RoomSummaryCard_icon_files:hover {
+.mx_AccessibleButton.mx_BaseCard_Button.mx_RoomSummaryCard_Button.mx_RoomSummaryCard_icon_files:hover,
+.mx_EventTile *,
+.mx_EventTile.mx_EventTile_isEditing.mx_EventTile_continuation.mx_EventTile_last.mx_EventTile_verified{
     background-color: rgb(var(--background-color)) !important;
 }
 
@@ -125,7 +127,8 @@ span,
 .mx_AccessibleButton.mx_JumpToBottomButton_scrollDown::before,
 .mx_AccessibleButton.mx_TopUnreadMessagesBar_scrollUp::after,
 .mx_Dialog_title,
-.mx_UserInfo_container {
+.mx_UserInfo_container,
+.mx_AccessibleButton.mx_SearchBar_button{
     color: rgb(var(--text-color))
 }
 
@@ -353,6 +356,8 @@ label,
 .mx_AccessibleButton::after,
 .mx_RoomView_myReadMarker_container,
 .mx_MFileBody img,
+.mx_AccessibleButton.mx_SearchBar_searchButton,
+.mx_AccessibleButton.mx_SearchBar_cancel,
 .mx_AccessibleButton.mx_RoomSummaryCard_app_options::before {
     filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(1734%) hue-rotate(320deg) brightness(119%) contrast(94%);
 }
