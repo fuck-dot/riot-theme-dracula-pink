@@ -5,8 +5,6 @@
     --background-color-brighter: 68, 71, 90;
     --accent-color: 255, 121, 198;
 }
-
-
 /*hacky filter stuff for icons*/
 /* https://codepen.io/sosuke/pen/Pjoqqp */
 .mx_AccessibleButton.mx_DirectorySearchBox_clear,
@@ -57,6 +55,7 @@
 .mx_MFileBody img,
 .mx_AccessibleButton.mx_SearchBar_searchButton,
 .mx_AccessibleButton.mx_SearchBar_cancel,
+.mx_filterFlipColor,
 .mx_AccessibleButton.mx_RoomSummaryCard_app_options::before {
     filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(1734%) hue-rotate(320deg) brightness(119%) contrast(94%);
 }
@@ -91,6 +90,7 @@ select,
 .mx_AccessibleButton.mx_RoomTile:hover,
 .mx_AccessibleButton.mx_BaseCard_Button.mx_RoomSummaryCard_Button.mx_RoomSummaryCard_icon_files:hover,
 .mx_EventTile *,
+.mx_ReplyPreview_section,
 .mx_EventTile.mx_EventTile_isEditing.mx_EventTile_continuation.mx_EventTile_last.mx_EventTile_verified {
     background-color: rgb(var(--background-color)) !important;
 }
@@ -182,7 +182,8 @@ span,
 .mx_AccessibleButton.mx_TopUnreadMessagesBar_scrollUp::after,
 .mx_Dialog_title,
 .mx_UserInfo_container,
-.mx_AccessibleButton.mx_SearchBar_button {
+.mx_AccessibleButton.mx_SearchBar_button,
+.mx_ReplyPreview_header.mx_ReplyPreview_title{
     color: rgb(var(--text-color))
 }
 
