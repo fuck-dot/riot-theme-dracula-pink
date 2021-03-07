@@ -1,310 +1,10 @@
 :root {
     --text-color: 248, 248, 242;
-    /* less bright, for unimportant bits */
+    /*if you want to change --text-color you should also change the hacky filtering stuff with this tool https://codepen.io/sosuke/pen/Pjoqqp*/
     --background-color: 40, 42, 54;
     --background-color-brighter: 68, 71, 90;
     --accent-color: 255, 121, 198;
 }
-
-.mx_EventTile_line:hover,
-.mx_AccessibleButton:hover,
-.mx_AccessibleButton.mx_RoomSublist_auxButton:hover,
-.mx_Autocomplete_Completion_block.mx_Autocomplete_Completion:hover {
-    background-color: rgb(var(--background-color)) !important
-}
-
-.mx_RoomView_MessageList,
-.mx_RoomView,
-.mx_RoomView_statusArea,
-.mx_RoomSearch,
-.mx_AccessibleButton.mx_LeftPanel_exploreButton,
-.mx_EventTile_line,
-.mx_Field.mx_Field_input,
-.mx_DirectorySearchBox.mx_RoomDirectory_searchbox.mx_textinput,
-.mx_Field_22,
-.mx_Autocomplete_Completion_container_pill,
-.mx_Autocomplete_Completion_0,
-input,
-.mx_Autocomplete_Completion_pill.mx_Autocomplete_Completion,
-input.mx_RoomSearch_input,
-textarea,
-select,
-.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_selected,
-.mx_RoomSublist_resizerHandle:hover,
-.mx_RightPanel_ResizeHandle:hover,
-.mx_RoomTile_nameContainer:hover,
-.mx_AccessibleButton.mx_RoomTile:hover,
-.mx_AccessibleButton.mx_BaseCard_Button.mx_RoomSummaryCard_Button.mx_RoomSummaryCard_icon_files:hover,
-.mx_EventTile *,
-.mx_EventTile.mx_EventTile_isEditing.mx_EventTile_continuation.mx_EventTile_last.mx_EventTile_verified{
-    background-color: rgb(var(--background-color)) !important;
-}
-
-.mx_AccessibleButton.mx_ToggleSwitch.mx_ToggleSwitch_enabled {
-    background-color: rgb(var(--background-color));
-}
-
-
-
-.mx_MessageComposer_wrapper,
-.mx_Autocomplete,
-.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown,
-.mx_RoomHeader_buttons,
-.mx_RoomHeader_wrapper,
-.mx_LeftPanel,
-.mx_LeftPanel_roomListContainer,
-.mx_IconizedContextMenu.mx_UserMenu_contextMenu,
-.mx_IconizedContextMenu.mx_RoomTile_contextMenu.mx_IconizedContextMenu_compact,
-.mx_LeftPanel_filterContainer,
-.mx_RoomBreadcrumbs.mx_RoomBreadcrumbs-appear-done.mx_RoomBreadcrumbs-enter-done,
-.mx_LeftPanel_actualRoomListContainer.mx_AutoHideScrollbar,
-.mx_LeftPanel_roomListWrapper.mx_LeftPanel_roomListWrapper_stickyTop.mx_LeftPanel_roomListWrapper_stickyBottom,
-.mx_LeftPanel_userHeader,
-.mx_AutoHideScrollbar.mx_LeftPanel_breadcrumbsContainer.mx_IndicatorScrollbar_leftOverflow,
-.mx_LeftPanel_roomListContainer,
-.mx_RoomSublist_resizeBox,
-.mx_RoomSublist_headerContainer,
-.mx_AutoHideScrollbar.mx_LeftPanel_breadcrumbsContainer.mx_IndicatorScrollbar_rightOverflow,
-.mx_MatrixChat,
-.mx_Dialog,
-.mx_MatrixChat_wrapper,
-.mx_RoomPreviewBar.dark-panel.mx_RoomPreviewBar_ViewingRoom.mx_RoomPreviewBar_dialog,
-.mx_BaseAvatar.mx_BaseAvatar_image,
-.mx_RightPanel_ResizeWrapper,
-.mx_BaseCard,
-.mx_E2EIcon.mx_E2EIcon_bordered,
-.mx_MainSplit,
-.mx_RightPanel.dark-panel,
-.mx_MatrixChat.mx_MatrixChat_useCompactLayout,
-.mx_RoomSublist_contextMenu,
-.mx_RoomSublist_stickable.mx_RoomSublist_headerContainer_stickyTop.mx_RoomSublist_headerContainer_sticky,
-.mx_LeftPanel_roomListWrapper.mx_LeftPanel_roomListWrapper_stickyTop,
-.mx_MatrixChat,
-.mx_MessageContextMenu,
-.mx_RoomView_messageListWrapper,
-.mx_NetworkDropdown_server,
-.mx_AccessibleButton.mx_MessageComposerFormatBar_button,
-.mx_MessageActionBar,
-.mx_Checkbox_background,
-.mx_AccessibleButton.mx_TopUnreadMessagesBar_scrollUp,
-.mx_AccessibleButton.mx_TopUnreadMessagesBar_markAsRead,
-.mx_AccessibleButton.mx_NetworkDropdown_server_add,
-.mx_ToggleSwitch_ball,
-.mx_MatrixChat_splash.mx_AccessibleButton.mx_RoomSummaryCard_app_pinToggle,
-.mx_AccessibleButton.mx_RoomSummaryCard_app_pinToggle,
-.mx_AccessibleButton.mx_RoomSummaryCard_app_options,
-.mx_ImageView_download{
-    background-color: rgb(var(--background-color-brighter)) !important
-}
-
-.mx_RoomDirectory_preview,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary,
-.mx_AccessibleButton.mx_MessageContextMenu_field,
-.mx_RoomHeader_topic,
-.mx_BasicMessageComposer_input.mx_BasicMessageComposer_input_shouldShowPillAvatar.mx_BasicMessageComposer_inputEmpty,
-th,
-th,
-h3,
-h1,
-h2,
-div,
-input,
-li,
-.mx_ReplyThread_wrapper_empty,
-.mx_EventTile_readAvatarRemainder,
-#text,
-.mx_Autocomplete_provider_name,
-textarea,
-.mx_SettingsTab_heading,
-.mx_SettingsTab_subheading,
-label,
-.mx_SettingsTab_subsectionText,
-.mx_SettingsFlag span,
-p,
-span,
-.mx_MessageTimestamp,
-.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown::before,
-.mx_AccessibleButton.mx_TopUnreadMessagesBar_scrollUp::after,
-.mx_Dialog_title,
-.mx_UserInfo_container,
-.mx_AccessibleButton.mx_SearchBar_button{
-    color: rgb(var(--text-color))
-}
-
-.mx_AccessibleButton.mx_ToggleSwitch.mx_ToggleSwitch_on.mx_ToggleSwitch_enabled .mx_ToggleSwitch_ball {
-    background-color: rgb(var(--text-color)) !important
-}
-
-input,
-.mx_RoomSearch_input.mx_RoomSearch_inputExpanded,
-.mx_SettingsFlag_label,
-.mx_Autocomplete_provider_name,
-.mx_AccessibleButton.mx_RoomSummaryCard_icon_app span {
-    color: rgb(var(--text-color)) !important
-}
-
-.mx_AccessibleButton.mx_RoomSublist_headerText span,
-.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown,
-.mx_AccessibleButton.mx_IconizedContextMenu_active span,
-.mx_RoomSublist_collapseBtn,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_secondary,
-.mx_MFileBody,
-.mx_SenderProfile_name,
-.mx_RadioButton.mx_RadioButton_enabled.mx_RadioButton_checked,
-.mx_RightPanel_ResizeHandle,
-a.linkified,
-.mx_MFileBody_download,
-.mx_UserNotifSettings_keywords,
-.mx_UserMenu_userName,
-.mx_RoomHeader_nametext,
-.mx_Autocomplete_Completion_subtitle,
-.mx_Autocomplete_Completion_description,
-.mx_LinkPreviewWidget_title a,
-a,
-.mx_IconizedContextMenu_label,
-.mx_RoomHeader_name,
-.mx_Spinner,
-.mx_AccessibleButton.mx_UserInfo_field,
-.mx_EventTile_pre_container *,
-code,
-.mx_AccessibleButton.mx_NetworkDropdown_server_add,
-.mx_MFileBody *,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_link.mx_AccessibleButton_disabled,
-.mx_Field.mx_Field_input,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_link_sm,
-label,
-.mx_AppearanceUserSettingsTab_AdvancedToggle,
-.mx_WhoIsTypingTile_label,
-.mx_WhoIsTypingTile_avatars,
-.mx_Dialog_content,
-.mx_UploadBar *,
-.mx_RedactedBody,
-.mx_TextualEvent,
-.mx_RoomView_myReadMarker *,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_link,
-.mx_ImageView_download{
-    color: rgb(var(--accent-color)) !important;
-    /* animation-name: rainbow-color !important;
-    animation-duration: 5s !important;
-    animation-iteration-count: infinite !important;
-    animation-direction: alternate !important; */
-}
-
-.mx_AccessibleButton.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_2char,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary,
-.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_2char,
-.mx_AccessibleButton.mx_MemberList_invite,
-.mx_AccessibleButton.mx_ToggleSwitch.mx_ToggleSwitch_on.mx_ToggleSwitch_enabled,
-.mx_AccessibleButton.mx_TabbedView_tabLabel.mx_TabbedView_tabLabel_active,
-.mx_BaseAvatar_initial,
-.mx_UserPill,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_danger,
-.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_selected.mx_RoomTile_minimized,
-.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_hover.mx_RoomTile_minimized,
-.mx_AccessibleButton.mx_AvatarSetting_avatarPlaceholder,
-.mx_AccessibleButton.mx_ReactionsRowButton.mx_ReactionsRowButton_selected,
-.mx_TopUnreadMessagesBar::after,
-.mx_RoomSublist_resizerHandle,
-.mx_RightPanel_ResizeHandle,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm.mx_AccessibleButton_disabled,
-.mx_AccessibleButton.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar,
-.mx_Dialog_buttons *,
-.mx_UploadBar_uploadProgressInner,
-.mx_EmotesPanel_file *,
-.mx_UserNotifSettings_pushRulesTable .m.rule,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm {
-    background: rgb(var(--accent-color)) !important;
-    /* animation-name: rainbow !important;
-    animation-duration: 5s !important;
-    animation-iteration-count: infinite !important;
-    animation-direction: alternate !important; */
-}
-
-.mx_DecoratedRoomAvatar,
-.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar,
-.mx_BaseAvatar_initial,
-.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar.mx_UserMenu_userAvatar,
-.mx_RoomSearch,
-.mx_RoomSearch.mx_RoomSearch_minimized,
-.mx_AccessibleButton.mx_LeftPanel_exploreButton,
-.mx_AccessibleButton.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar,
-.mx_UserPill,
-.mx_AccessibleButton,
-.mx_ToggleSwitch_ball,
-.mx_NotificationBadge,
-.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_selected,
-.mx_RoomSearch,
-.mx_AccessibleButton.mx_RoomSublist_auxButton,
-.mx_DecoratedRoomAvatar.mx_DecoratedRoomAvatar_cutout,
-.mx_Autocomplete_Completion_container_pill,
-.mx_Autocomplete_Completion_pill.mx_Autocomplete_Completion,
-.mx_TopUnreadMessagesBar::after,
-.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown::before,
-.mx_Field,
-.mx_Field.mx_Field_input.mx_SettingsTab_customFontSizeField.mx_Field_valid,
-.mx_Dialog_buttons * {
-    border-radius: 5px !important;
-}
-
-*,
-.mx_Field,
-.mx_Checkbox_background,
-.mx_Dialog_buttons *,
-.mx_AccessibleButton.mx_ReactionsRowButton,
-.mx_WhoIsTypingTile *,
-.mx_RoomHeader_wrapper,
-.mx_EmotesPanel_file *,
-.mx_ReplyThread_wrapper *,
-.mx_EventTile_line *,
-.mx_EventTile * {
-    border-color: rgb(var(--accent-color)) !important;
-    /* animation-name: rainbow-border !important;
-    animation-duration: 5s !important;
-    animation-iteration-count: infinite !important;
-    animation-direction: alternate !important; */
-}
-
-.mx_RoomHeader_name,
-.mx_RoomHeader_topic,
-.mx_LeftPanel_filterContainer,
-.mx_RoomHeader_nametext {
-    border-style: none;
-}
-.mx_AccessibleButton.mx_LeftPanel_exploreButton,
-.mx_AccessibleButton.mx_MessageActionBar_maskButton,
-.mx_RoomSearch.mx_RoomSearch_minimized{
-    border-style:  outset;
-}
-
-.mx_UserPill,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm,
-.mx_AccessibleButton.mx_TabbedView_tabLabel.mx_TabbedView_tabLabel_active,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_danger,
-.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_2char span,
-.mx_AccessibleButton.mx_TabbedView_tabLabel.mx_TabbedView_tabLabel_active,
-.mx_AccessibleButton.mx_MemberList_invite,
-.mx_AccessibleButton.mx_RoomSublist_menuButton,
-.mx_Autocomplete_Completion_description,
-.mx_ReactionsRowButton_count,
-.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm.mx_AccessibleButton_disabled,
-.mx_AccessibleButton.mx_AvatarSetting_uploadButton,
-.mx_Dialog_buttons *,
-.mx_EmotesPanel_file * {
-    color: rgb(var(--background-color-brighter)) !important
-}
-
-
-.mx_Checkbox {
-    color: rgb(var(--text-color))
-}
-
-label,
-.mx_AccessibleButton.mx_RoomSublist_menuButton,
-.mx_MessageActionBar{
-    background-color: transparent !important;
-}
-
 
 
 /*hacky filter stuff for icons*/
@@ -361,6 +61,292 @@ label,
     filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(1734%) hue-rotate(320deg) brightness(119%) contrast(94%);
 }
 
+.mx_EventTile_line:hover,
+.mx_AccessibleButton:hover,
+.mx_AccessibleButton.mx_RoomSublist_auxButton:hover,
+.mx_Autocomplete_Completion_block.mx_Autocomplete_Completion:hover {
+    background-color: rgb(var(--background-color)) !important
+}
+
+.mx_RoomView_MessageList,
+.mx_RoomView,
+.mx_RoomView_statusArea,
+.mx_RoomSearch,
+.mx_AccessibleButton.mx_LeftPanel_exploreButton,
+.mx_EventTile_line,
+.mx_Field.mx_Field_input,
+.mx_DirectorySearchBox.mx_RoomDirectory_searchbox.mx_textinput,
+.mx_Field_22,
+.mx_Autocomplete_Completion_container_pill,
+.mx_Autocomplete_Completion_0,
+input,
+.mx_Autocomplete_Completion_pill.mx_Autocomplete_Completion,
+input.mx_RoomSearch_input,
+textarea,
+select,
+.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_selected,
+.mx_RoomSublist_resizerHandle:hover,
+.mx_RightPanel_ResizeHandle:hover,
+.mx_RoomTile_nameContainer:hover,
+.mx_AccessibleButton.mx_RoomTile:hover,
+.mx_AccessibleButton.mx_BaseCard_Button.mx_RoomSummaryCard_Button.mx_RoomSummaryCard_icon_files:hover,
+.mx_EventTile *,
+.mx_EventTile.mx_EventTile_isEditing.mx_EventTile_continuation.mx_EventTile_last.mx_EventTile_verified {
+    background-color: rgb(var(--background-color)) !important;
+}
+
+.mx_AccessibleButton.mx_ToggleSwitch.mx_ToggleSwitch_enabled {
+    background-color: rgb(var(--background-color));
+}
+
+
+
+.mx_MessageComposer_wrapper,
+.mx_Autocomplete,
+.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown,
+.mx_RoomHeader_buttons,
+.mx_RoomHeader_wrapper,
+.mx_LeftPanel,
+.mx_LeftPanel_roomListContainer,
+.mx_IconizedContextMenu.mx_UserMenu_contextMenu,
+.mx_IconizedContextMenu.mx_RoomTile_contextMenu.mx_IconizedContextMenu_compact,
+.mx_LeftPanel_filterContainer,
+.mx_RoomBreadcrumbs.mx_RoomBreadcrumbs-appear-done.mx_RoomBreadcrumbs-enter-done,
+.mx_LeftPanel_actualRoomListContainer.mx_AutoHideScrollbar,
+.mx_LeftPanel_roomListWrapper.mx_LeftPanel_roomListWrapper_stickyTop.mx_LeftPanel_roomListWrapper_stickyBottom,
+.mx_LeftPanel_userHeader,
+.mx_AutoHideScrollbar.mx_LeftPanel_breadcrumbsContainer.mx_IndicatorScrollbar_leftOverflow,
+.mx_LeftPanel_roomListContainer,
+.mx_RoomSublist_resizeBox,
+.mx_RoomSublist_headerContainer,
+.mx_AutoHideScrollbar.mx_LeftPanel_breadcrumbsContainer.mx_IndicatorScrollbar_rightOverflow,
+.mx_MatrixChat,
+.mx_Dialog,
+.mx_MatrixChat_wrapper,
+.mx_RoomPreviewBar.dark-panel.mx_RoomPreviewBar_ViewingRoom.mx_RoomPreviewBar_dialog,
+.mx_BaseAvatar.mx_BaseAvatar_image,
+.mx_RightPanel_ResizeWrapper,
+.mx_BaseCard,
+.mx_E2EIcon.mx_E2EIcon_bordered,
+.mx_MainSplit,
+.mx_RightPanel.dark-panel,
+.mx_MatrixChat.mx_MatrixChat_useCompactLayout,
+.mx_RoomSublist_contextMenu,
+.mx_RoomSublist_stickable.mx_RoomSublist_headerContainer_stickyTop.mx_RoomSublist_headerContainer_sticky,
+.mx_LeftPanel_roomListWrapper.mx_LeftPanel_roomListWrapper_stickyTop,
+.mx_MatrixChat,
+.mx_MessageContextMenu,
+.mx_RoomView_messageListWrapper,
+.mx_NetworkDropdown_server,
+.mx_AccessibleButton.mx_MessageComposerFormatBar_button,
+.mx_MessageActionBar,
+.mx_Checkbox_background,
+.mx_AccessibleButton.mx_TopUnreadMessagesBar_scrollUp,
+.mx_AccessibleButton.mx_TopUnreadMessagesBar_markAsRead,
+.mx_AccessibleButton.mx_NetworkDropdown_server_add,
+.mx_ToggleSwitch_ball,
+.mx_MatrixChat_splash.mx_AccessibleButton.mx_RoomSummaryCard_app_pinToggle,
+.mx_AccessibleButton.mx_RoomSummaryCard_app_pinToggle,
+.mx_AccessibleButton.mx_RoomSummaryCard_app_options,
+.mx_ImageView_download {
+    background-color: rgb(var(--background-color-brighter)) !important
+}
+
+.mx_RoomDirectory_preview,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary,
+.mx_AccessibleButton.mx_MessageContextMenu_field,
+.mx_RoomHeader_topic,
+.mx_BasicMessageComposer_input.mx_BasicMessageComposer_input_shouldShowPillAvatar.mx_BasicMessageComposer_inputEmpty,
+th,
+th,
+h3,
+h1,
+h2,
+div,
+input,
+li,
+.mx_ReplyThread_wrapper_empty,
+.mx_EventTile_readAvatarRemainder,
+#text,
+.mx_Autocomplete_provider_name,
+textarea,
+.mx_SettingsTab_heading,
+.mx_SettingsTab_subheading,
+label,
+.mx_SettingsTab_subsectionText,
+.mx_SettingsFlag span,
+p,
+span,
+.mx_MessageTimestamp,
+.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown::before,
+.mx_AccessibleButton.mx_TopUnreadMessagesBar_scrollUp::after,
+.mx_Dialog_title,
+.mx_UserInfo_container,
+.mx_AccessibleButton.mx_SearchBar_button {
+    color: rgb(var(--text-color))
+}
+
+.mx_AccessibleButton.mx_ToggleSwitch.mx_ToggleSwitch_on.mx_ToggleSwitch_enabled .mx_ToggleSwitch_ball {
+    background-color: rgb(var(--text-color)) !important
+}
+
+input,
+.mx_RoomSearch_input.mx_RoomSearch_inputExpanded,
+.mx_SettingsFlag_label,
+.mx_Autocomplete_provider_name,
+.mx_AccessibleButton.mx_RoomSummaryCard_icon_app span {
+    color: rgb(var(--text-color)) !important
+}
+
+.mx_AccessibleButton.mx_RoomSublist_headerText span,
+.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown,
+.mx_AccessibleButton.mx_IconizedContextMenu_active span,
+.mx_RoomSublist_collapseBtn,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_secondary,
+.mx_MFileBody,
+.mx_SenderProfile_name,
+.mx_RadioButton.mx_RadioButton_enabled.mx_RadioButton_checked,
+.mx_RightPanel_ResizeHandle,
+a.linkified,
+.mx_MFileBody_download,
+.mx_UserNotifSettings_keywords,
+.mx_UserMenu_userName,
+.mx_RoomHeader_nametext,
+.mx_Autocomplete_Completion_subtitle,
+.mx_Autocomplete_Completion_description,
+.mx_LinkPreviewWidget_title a,
+a,
+.mx_IconizedContextMenu_label,
+.mx_RoomHeader_name,
+.mx_Spinner,
+.mx_AccessibleButton.mx_UserInfo_field,
+.mx_EventTile_pre_container *,
+code,
+.mx_AccessibleButton.mx_NetworkDropdown_server_add,
+.mx_MFileBody *,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_link.mx_AccessibleButton_disabled,
+.mx_Field.mx_Field_input,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_link_sm,
+label,
+.mx_AppearanceUserSettingsTab_AdvancedToggle,
+.mx_WhoIsTypingTile_label,
+.mx_WhoIsTypingTile_avatars,
+.mx_Dialog_content,
+.mx_UploadBar *,
+.mx_RedactedBody,
+.mx_TextualEvent,
+.mx_RoomView_myReadMarker *,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_link,
+.mx_ImageView_download {
+    color: rgb(var(--accent-color)) !important;
+}
+
+.mx_AccessibleButton.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_2char,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary,
+.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_2char,
+.mx_AccessibleButton.mx_MemberList_invite,
+.mx_AccessibleButton.mx_ToggleSwitch.mx_ToggleSwitch_on.mx_ToggleSwitch_enabled,
+.mx_AccessibleButton.mx_TabbedView_tabLabel.mx_TabbedView_tabLabel_active,
+.mx_BaseAvatar_initial,
+.mx_UserPill,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_danger,
+.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_selected.mx_RoomTile_minimized,
+.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_hover.mx_RoomTile_minimized,
+.mx_AccessibleButton.mx_AvatarSetting_avatarPlaceholder,
+.mx_AccessibleButton.mx_ReactionsRowButton.mx_ReactionsRowButton_selected,
+.mx_TopUnreadMessagesBar::after,
+.mx_RoomSublist_resizerHandle,
+.mx_RightPanel_ResizeHandle,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm.mx_AccessibleButton_disabled,
+.mx_AccessibleButton.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar,
+.mx_Dialog_buttons *,
+.mx_UploadBar_uploadProgressInner,
+.mx_EmotesPanel_file *,
+.mx_UserNotifSettings_pushRulesTable .m.rule,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm {
+    background: rgb(var(--accent-color)) !important;
+}
+
+.mx_DecoratedRoomAvatar,
+.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar,
+.mx_BaseAvatar_initial,
+.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar.mx_UserMenu_userAvatar,
+.mx_RoomSearch,
+.mx_RoomSearch.mx_RoomSearch_minimized,
+.mx_AccessibleButton.mx_LeftPanel_exploreButton,
+.mx_AccessibleButton.mx_BaseAvatar.mx_BaseAvatar_image.mx_RoundAvatar,
+.mx_UserPill,
+.mx_AccessibleButton,
+.mx_ToggleSwitch_ball,
+.mx_NotificationBadge,
+.mx_AccessibleButton.mx_RoomTile.mx_RoomTile_selected,
+.mx_RoomSearch,
+.mx_AccessibleButton.mx_RoomSublist_auxButton,
+.mx_DecoratedRoomAvatar.mx_DecoratedRoomAvatar_cutout,
+.mx_Autocomplete_Completion_container_pill,
+.mx_Autocomplete_Completion_pill.mx_Autocomplete_Completion,
+.mx_TopUnreadMessagesBar::after,
+.mx_AccessibleButton.mx_JumpToBottomButton_scrollDown::before,
+.mx_Field,
+.mx_Field.mx_Field_input.mx_SettingsTab_customFontSizeField.mx_Field_valid,
+.mx_Dialog_buttons * {
+    border-radius: 5px !important;
+}
+
+*,
+.mx_Field,
+.mx_Checkbox_background,
+.mx_Dialog_buttons *,
+.mx_AccessibleButton.mx_ReactionsRowButton,
+.mx_WhoIsTypingTile *,
+.mx_RoomHeader_wrapper,
+.mx_EmotesPanel_file *,
+.mx_ReplyThread_wrapper *,
+.mx_EventTile_line *,
+.mx_EventTile * {
+    border-color: rgb(var(--accent-color)) !important;
+}
+
+.mx_RoomHeader_name,
+.mx_RoomHeader_topic,
+.mx_LeftPanel_filterContainer,
+.mx_RoomHeader_nametext {
+    border-style: none;
+}
+.mx_AccessibleButton.mx_LeftPanel_exploreButton,
+.mx_AccessibleButton.mx_MessageActionBar_maskButton,
+.mx_RoomSearch.mx_RoomSearch_minimized {
+    border-style: outset;
+}
+
+.mx_UserPill,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm,
+.mx_AccessibleButton.mx_TabbedView_tabLabel.mx_TabbedView_tabLabel_active,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_danger,
+.mx_NotificationBadge.mx_NotificationBadge_visible.mx_NotificationBadge_2char span,
+.mx_AccessibleButton.mx_TabbedView_tabLabel.mx_TabbedView_tabLabel_active,
+.mx_AccessibleButton.mx_MemberList_invite,
+.mx_AccessibleButton.mx_RoomSublist_menuButton,
+.mx_Autocomplete_Completion_description,
+.mx_ReactionsRowButton_count,
+.mx_AccessibleButton.mx_AccessibleButton_hasKind.mx_AccessibleButton_kind_primary_sm.mx_AccessibleButton_disabled,
+.mx_AccessibleButton.mx_AvatarSetting_uploadButton,
+.mx_Dialog_buttons *,
+.mx_EmotesPanel_file * {
+    color: rgb(var(--background-color-brighter)) !important
+}
+
+
+.mx_Checkbox {
+    color: rgb(var(--text-color))
+}
+
+label,
+.mx_AccessibleButton.mx_RoomSublist_menuButton,
+.mx_MessageActionBar {
+    background-color: transparent !important;
+}
 
 /* glowy search box or smth*/
 .mx_RoomSearch.mx_RoomSearch_focused,
@@ -370,8 +356,6 @@ label,
     background-color: rgb(var(--background-color));
 
     box-shadow: 0px 0px 3px 1px rgb(var(--accent-color));
-    /* in order: x offset, y offset, blur size, spread size, color */
-    /* blur size and spread size are optional (they default to 0) */
 }
 
 
@@ -381,75 +365,3 @@ label,
 .mx_BasicMessageComposer * {
     padding: 5px 10px
 }
-
-/*@keyframes rainbow {
-    0% {
-        background-color: #ff79c6;
-    }
-    16% {
-        background-color: #bd93f9;
-    }
-    32% {
-        background-color: #ff5555;
-    }
-    48% {
-        background-color: #ffb86c;
-    }
-    64% {
-        background-color: #f1fa8c;
-    }
-    80% {
-        background-color: #50fa7b;
-    }
-    100% {
-        background-color: #8be9fd;
-    }
-}
-
-@keyframes rainbow-color {
-    0% {
-        color: #ff79c6;
-    }
-    16% {
-        color: #bd93f9;
-    }
-    32% {
-        color: #ff5555;
-    }
-    48% {
-        color: #ffb86c;
-    }
-    64% {
-        color: #f1fa8c;
-    }
-    80% {
-        color: #50fa7b;
-    }
-    100% {
-        color: #8be9fd;
-    }
-}
-
-@keyframes rainbow-border {
-    0% {
-        border-color: #ff79c6;
-    }
-    16% {
-        border-color: #bd93f9;
-    }
-    32% {
-        border-color: #ff5555;
-    }
-    48% {
-        border-color: #ffb86c;
-    }
-    64% {
-        border-color: #f1fa8c;
-    }
-    80% {
-        border-color: #50fa7b;
-    }
-    100% {
-        border-color: #8be9fd;
-    }
-} */
